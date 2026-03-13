@@ -119,6 +119,7 @@ The app is safe, you can find the base instagram ipa from **decrypt.day**, you c
 ```
 # strings to replace in Ghidra (for example change /clips/discover to /xlips/discover):
 
+### Reels / Explore
 /clips/discover/stream/
 /clips/ads_discover_sync_flow/
 /clips/discover/social/
@@ -130,8 +131,23 @@ clips/trending_add_yours_prompts
 /discover/chaining/
 /discover/topical_explore/
 /discover/chaining_experience_contextual_ads/
-/feed/timeline
+/discover/explore_clips/
+/discover/discover_similar_clips/
+/clips/suggested_template
+/clips/home/
+/clips/chaining/
+/clips/recommended_label/
+/clips_media_feed/
+/suggested_content/
+
+### Ads
 /feed/injected_reels_media/
+ads/async_ads/
+ads/async_ads/ads_only_lane/
+feed/async_ads_ranking/
+activity_feed_sponsored_content_api
+
+### NOTE: /feed/timeline is intentionally NOT patched to keep the home feed working
 ```
 - After patching the strings, go to `Export/Export Program`, select `Original file`, name it Instagram and export it.
 - Once done exporting, open again the .ipa file with a zip explorer and replace the old `Instagram` binary with the patched one.

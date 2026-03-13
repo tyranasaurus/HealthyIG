@@ -21,7 +21,7 @@ declare -A replacements
 replacements["\"discover/topical_explore/\""]="\"\""
 
 ### Feed main screen
-replacements["feed/timeline/\""]="\""
+# replacements["feed/timeline/\""]="\""
 
 ### Feed stories (CAN still upload stories)
 # replacements["\"feed/reels_tray/\""]="\"\""
@@ -47,6 +47,13 @@ replacements["\"clips/recommended_label/\""]="\"\""
 #replacements["\"clips_media_ids\""]="\"\""
 #replacements["\"/clips\""]="\"\""
 replacements["\"/clips_media_feed/\""]="\"\""
+
+### Ads
+replacements["\"feed/injected_reels_media/\""]="\"\""
+replacements["\"ads/async_ads/\""]="\"\""
+replacements["\"ads/async_ads/ads_only_lane/\""]="\"\""
+replacements["\"feed/async_ads_ranking/\""]="\"\""
+replacements["\"activity_feed_sponsored_content_api\""]="\"\""
 
 ###############################################################################
 ###############################################################################
